@@ -1,0 +1,27 @@
+{
+  "$schema": "https://go.kicad.org/pcm/schemas/v1",
+  "name": "Sivakov KiCad template collection",
+  "description": "KiCad templates optimized for PCB manufacturing services.",
+  "description_full": "A collection of KiCad PCB templates optimized for PCB manufacturing. Templates include preconfigured design rules and stackups to meet specific manufacturing requirements and specifications.",
+  "identifier": "com.github.sivakov512.kicad-templates",
+  "type": "library",
+  "author": {
+    "name": "Nikita Sivakov",
+    "contact": {
+      "github": "https://github.com/sivakov512",
+      "email": "sivakov512@icloud.com"
+    }
+  },
+  "license": "MIT",
+  "resources": {
+    "homepage": "https://github.com/sivakov512/kicad-templates"
+  },
+  "tags": ["jlcpcb", "library", "pcb", "template"],
+  "versions": [
+    {
+      "version": "1.0.0",
+      "status": "stable",
+      "kicad_version": "8.0"
+    }
+  ]
+}

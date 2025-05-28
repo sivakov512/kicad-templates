@@ -1,0 +1,93 @@
+name: Release
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.extract_metadata.outputs.version }}
+      identifier: ${{ steps.extract_metadata.outputs.identifier }}
+      status: ${{ steps.extract_metadata.outputs.status }}
+      kicad_version: ${{ steps.extract_metadata.outputs.kicad_version }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Extract metadata
+        id: extract_metadata
+        run: |
+          # Extract version and remove 'v' prefix if present
+          VERSION_WITHOUT_V=${{ github.ref_name }}
+          VERSION_WITHOUT_V=${VERSION_WITHOUT_V#v}
+          
+          # Extract metadata from JSON
+          IDENTIFIER=$(jq -r '.identifier' metadata.json)
+          STATUS=$(jq -r '.versions[0].status' metadata.json)
+          KICAD_VERSION=$(jq -r '.versions[0].kicad_version' metadata.json)
+          
+          echo "version=$VERSION_WITHOUT_V" >> $GITHUB_OUTPUT
+          echo "identifier=$IDENTIFIER" >> $GITHUB_OUTPUT
+          echo "status=$STATUS" >> $GITHUB_OUTPUT
+          echo "kicad_version=$KICAD_VERSION" >> $GITHUB_OUTPUT
+
+  build:
+    needs: prepare
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    outputs:
+      download_url: ${{ steps.upload_archive.outputs.download_url }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Update version in metadata.json
+        run: |
+          # Update version in metadata.json
+          jq --arg ver "${{ needs.prepare.outputs.version }}" '.versions[0].version = $ver' metadata.json > metadata.json.tmp
+          mv metadata.json.tmp metadata.json
+
+      - name: Create ZIP archive
+        id: create_archive
+        run: |
+          ARCHIVE_NAME=skt-${{ github.ref_name }}.zip
+          echo "archive_name=$ARCHIVE_NAME" >> $GITHUB_OUTPUT
+          
+          zip -r "$ARCHIVE_NAME" \
+            kicad-templates/ \
+            metadata.json \
+            -x "*.git*" -x "*.github*"
+
+      - name: Upload archive to release
+        id: upload_archive
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release upload ${{ github.ref_name }} ${{ steps.create_archive.outputs.archive_name }} --clobber
+          
+          # Get the download URL for the uploaded asset
+          DOWNLOAD_URL="https://github.com/${{ github.repository }}/releases/download/${{ github.ref_name }}/${{ steps.create_archive.outputs.archive_name }}"
+          echo "download_url=$DOWNLOAD_URL" >> $GITHUB_OUTPUT
+
+  add_to_index:
+    needs: [prepare, build]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger PCM Index workflow
+        uses: benc-uk/workflow-dispatch@v1
+        with:
+          workflow: add-plugin-version.yml
+          repo: sivakov512/kicad-pcm-index
+          ref: master
+          token: ${{ secrets.PCM_INDEX_TOKEN }}
+          inputs: |
+            {
+              "identifier": "${{ needs.prepare.outputs.identifier }}",
+              "version": "${{ needs.prepare.outputs.version }}",
+              "status": "${{ needs.prepare.outputs.status }}",
+              "kicad_version": "${{ needs.prepare.outputs.kicad_version }}",
+              "download_url": "${{ needs.build.outputs.download_url }}"
+            }
