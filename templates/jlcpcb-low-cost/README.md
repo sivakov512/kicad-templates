@@ -61,7 +61,7 @@ The template is preconfigured with a 4-layer stackup and standard low-cost const
 | Clearance      | 0.1 mm  |
 | Track Width    | 0.1 mm  |
 | Via Size       | 0.4 mm  |
-| Via Hole       | 0.4 mm  |
+| Via Hole       | 0.3 mm  |
 | µVia Size      | 0.25 mm |
 | µVia Hole      | 0.15 mm |
 | DiffPair Width | 0.15 mm |
