@@ -22,12 +22,12 @@ jobs:
           # Extract version and remove 'v' prefix if present
           VERSION_WITHOUT_V=${{ github.ref_name }}
           VERSION_WITHOUT_V=${VERSION_WITHOUT_V#v}
-          
+
           # Extract metadata from JSON
           IDENTIFIER=$(jq -r '.identifier' metadata.json)
           STATUS=$(jq -r '.versions[0].status' metadata.json)
           KICAD_VERSION=$(jq -r '.versions[0].kicad_version' metadata.json)
-          
+
           echo "version=$VERSION_WITHOUT_V" >> $GITHUB_OUTPUT
           echo "identifier=$IDENTIFIER" >> $GITHUB_OUTPUT
           echo "status=$STATUS" >> $GITHUB_OUTPUT
@@ -55,9 +55,9 @@ jobs:
         run: |
           ARCHIVE_NAME=skt-${{ github.ref_name }}.zip
           echo "archive_name=$ARCHIVE_NAME" >> $GITHUB_OUTPUT
-          
+
           zip -r "$ARCHIVE_NAME" \
-            kicad-templates/ \
+            templates/ \
             metadata.json \
             -x "*.git*" -x "*.github*"
 
@@ -67,7 +67,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           gh release upload ${{ github.ref_name }} ${{ steps.create_archive.outputs.archive_name }} --clobber
-          
+
           # Get the download URL for the uploaded asset
           DOWNLOAD_URL="https://github.com/${{ github.repository }}/releases/download/${{ github.ref_name }}/${{ steps.create_archive.outputs.archive_name }}"
           echo "download_url=$DOWNLOAD_URL" >> $GITHUB_OUTPUT
