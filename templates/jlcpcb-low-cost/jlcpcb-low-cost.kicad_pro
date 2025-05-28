@@ -463,7 +463,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "jlcpcb-4layer-cheapest.kicad_pro",
+    "filename": "jlcpcb-low-cost.kicad_pro",
     "version": 3
   },
   "net_settings": {

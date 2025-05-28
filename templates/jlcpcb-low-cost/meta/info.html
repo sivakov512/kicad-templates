@@ -1,0 +1,216 @@
+<html>
+  <head>
+    <title>JLCPCB Low-Cost Template</title>
+  </head>
+  <body>
+    <h1>JLCPCB Low-Cost Template</h1>
+
+    <p>
+      A production-oriented KiCad template aligned with <a href="https://jlcpcb.com/capabilities/pcb-capabilities">JLCPCB's PCB fabrication capabilities</a>, using minimum design rules for cost-effective prototyping and manufacturing.
+    </p>
+
+    <p>
+      The template is preconfigured with a 4-layer stackup and standard low-cost constraints, but you're free to adjust the number of layers as needed.
+    </p>
+
+    <h2>Key Features</h2>
+    <ul>
+      <li>Based on <strong>JLCPCB's official capability specs</strong>: <a href="https://jlcpcb.com/capabilities/pcb-capabilities">jlcpcb.com/capabilities</a></li>
+      <li>Preconfigured for <strong>4-layer stackup</strong> (total 1.525 mm), easily replaceable with any layer count</li>
+      <li>Design rule constraints set to <strong>JLCPCB's lowest-cost thresholds</strong></li>
+      <li>Silkscreen and copper text tuned to <strong>pass fab tolerances</strong></li>
+      <li><code>LCSC PN</code> field present in schematic for <strong>automated BOM generation</strong></li>
+      <li><code>Default</code> net class mirrors DRC minimums for <strong>dense routing</strong></li>
+    </ul>
+
+    <h2>Stackup (Default: 4 Layers)</h2>
+    <table border="1" cellpadding="5" cellspacing="0">
+      <tr>
+        <th>Layer</th>
+        <th>Material</th>
+        <th>Thickness</th>
+      </tr>
+      <tr>
+        <td>Top Cu</td>
+        <td>Cu</td>
+        <td>0.035 mm</td>
+      </tr>
+      <tr>
+        <td>Prepreg</td>
+        <td>FR4</td>
+        <td>0.1 mm</td>
+      </tr>
+      <tr>
+        <td>In1 Cu</td>
+        <td>Cu</td>
+        <td>0.0175 mm</td>
+      </tr>
+      <tr>
+        <td>Core</td>
+        <td>FR4</td>
+        <td>1.2 mm</td>
+      </tr>
+      <tr>
+        <td>In2 Cu</td>
+        <td>Cu</td>
+        <td>0.0175 mm</td>
+      </tr>
+      <tr>
+        <td>Prepreg</td>
+        <td>FR4</td>
+        <td>0.1 mm</td>
+      </tr>
+      <tr>
+        <td>Bottom Cu</td>
+        <td>Cu</td>
+        <td>0.035 mm</td>
+      </tr>
+    </table>
+    <p><strong>Total thickness</strong>: 1.525 mm</p>
+
+    <h2>Design Rules → Constraints</h2>
+    <table border="1" cellpadding="5" cellspacing="0">
+      <tr>
+        <th>Parameter</th>
+        <th>Value</th>
+      </tr>
+      <tr>
+        <td>Minimum clearance</td>
+        <td>0.1 mm</td>
+      </tr>
+      <tr>
+        <td>Minimum track width</td>
+        <td>0.1 mm</td>
+      </tr>
+      <tr>
+        <td>Minimum connection width</td>
+        <td>0.1 mm</td>
+      </tr>
+      <tr>
+        <td>Minimum annular width</td>
+        <td>0.05 mm</td>
+      </tr>
+      <tr>
+        <td>Minimum via diameter</td>
+        <td>0.4 mm</td>
+      </tr>
+      <tr>
+        <td>Copper to hole clearance</td>
+        <td>0.2 mm</td>
+      </tr>
+      <tr>
+        <td>Copper to edge clearance</td>
+        <td>0.2 mm</td>
+      </tr>
+      <tr>
+        <td>Minimum through hole</td>
+        <td>0.3 mm</td>
+      </tr>
+      <tr>
+        <td>Hole to hole clearance</td>
+        <td>0.2 mm</td>
+      </tr>
+      <tr>
+        <td>uVia diameter</td>
+        <td>0.25 mm</td>
+      </tr>
+      <tr>
+        <td>uVia hole size</td>
+        <td>0.15 mm</td>
+      </tr>
+      <tr>
+        <td>Silkscreen → item clearance</td>
+        <td>0.15 mm</td>
+      </tr>
+      <tr>
+        <td>Min text height</td>
+        <td>1 mm</td>
+      </tr>
+      <tr>
+        <td>Min text thickness</td>
+        <td>0.15 mm</td>
+      </tr>
+    </table>
+
+    <h2>Net Classes → <code>Default</code></h2>
+    <table border="1" cellpadding="5" cellspacing="0">
+      <tr>
+        <th>Property</th>
+        <th>Value</th>
+      </tr>
+      <tr>
+        <td>Clearance</td>
+        <td>0.1 mm</td>
+      </tr>
+      <tr>
+        <td>Track Width</td>
+        <td>0.1 mm</td>
+      </tr>
+      <tr>
+        <td>Via Size</td>
+        <td>0.4 mm</td>
+      </tr>
+      <tr>
+        <td>Via Hole</td>
+        <td>0.4 mm</td>
+      </tr>
+      <tr>
+        <td>uVia Size</td>
+        <td>0.25 mm</td>
+      </tr>
+      <tr>
+        <td>uVia Hole</td>
+        <td>0.15 mm</td>
+      </tr>
+      <tr>
+        <td>DiffPair Width</td>
+        <td>0.15 mm</td>
+      </tr>
+      <tr>
+        <td>DiffPair Gap</td>
+        <td>0.15 mm</td>
+      </tr>
+    </table>
+
+    <h2>Text & Graphics Defaults</h2>
+    <table border="1" cellpadding="5" cellspacing="0">
+      <tr>
+        <th>Layer</th>
+        <th>Line Thickness</th>
+        <th>Text Height</th>
+        <th>Text Width</th>
+        <th>Text Thickness</th>
+      </tr>
+      <tr>
+        <td>Silk</td>
+        <td>0.15 mm</td>
+        <td>1 mm</td>
+        <td>1 mm</td>
+        <td>0.15 mm</td>
+      </tr>
+      <tr>
+        <td>Copper</td>
+        <td>0.2 mm</td>
+        <td>1.5 mm</td>
+        <td>1.5 mm</td>
+        <td>0.3 mm</td>
+      </tr>
+    </table>
+    <p>Complies with JLCPCB silkscreen rules: minimum 1 mm height, minimum 0.15 mm line.</p>
+
+    <h2>Schematic Setup</h2>
+    <ul>
+      <li><code>LCSC PN</code> field template pre-included for part number assignment.</li>
+      <li>Useful for automatic BOM and placement file generation during assembly quoting.</li>
+    </ul>
+
+    <h2>Notes</h2>
+    <ul>
+      <li>No finish, mask or stencil settings enforced — tune them at Gerber export.</li>
+      <li>Works great as a base for quick prototypes or clean reusable boards.</li>
+    </ul>
+
+    <p>&copy; 2025 Nikita Sivakov</p>
+    <p>Template repository: <a href="https://github.com/sivakov512/kicad-templates">https://github.com/sivakov512/kicad-templates</a></p>
+  </body>
+</html>
