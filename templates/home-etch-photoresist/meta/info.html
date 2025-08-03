@@ -1,0 +1,228 @@
+<html>
+    <head>
+        <title>Home Etch Photoresist Template</title>
+    </head>
+    <body>
+        <h1>Home Etch Photoresist Template</h1>
+
+        <p>
+            A KiCad template optimized for home PCB fabrication using
+            photoresist etching methods, configured with design rules suitable
+            for DIY PCB manufacturing with standard photoresist processes and
+            ferric chloride etching.
+        </p>
+
+        <p>
+            The template is preconfigured as a 2-layer board with constraints
+            appropriate for home etching capabilities, ensuring reliable results
+            with common DIY equipment and materials.
+        </p>
+
+        <h2>Key Features</h2>
+        <ul>
+            <li>
+                Optimized for <strong>home photoresist etching</strong> with UV
+                exposure and chemical etching
+            </li>
+            <li>
+                <strong>2-layer stackup</strong> (1.525 mm total thickness)
+                suitable for standard FR4 blanks
+            </li>
+            <li>
+                Design rules set for
+                <strong>reliable home fabrication</strong> with standard
+                equipment
+            </li>
+            <li>
+                Track widths and clearances tuned for
+                <strong>photoresist resolution limits</strong>
+            </li>
+            <li>
+                Via sizes compatible with <strong>manual drilling</strong> or
+                basic CNC equipment
+            </li>
+            <li>
+                Conservative constraints to ensure
+                <strong>high success rate</strong> in home workshop
+            </li>
+        </ul>
+
+        <h2>Stackup (2 Layers)</h2>
+        <table border="1" cellpadding="5" cellspacing="0">
+            <tr>
+                <th>Layer</th>
+                <th>Material</th>
+                <th>Thickness</th>
+            </tr>
+            <tr>
+                <td>Top Cu</td>
+                <td>Cu</td>
+                <td>0.035 mm</td>
+            </tr>
+            <tr>
+                <td>Core</td>
+                <td>FR4</td>
+                <td>1.435 mm</td>
+            </tr>
+            <tr>
+                <td>Bottom Cu</td>
+                <td>Cu</td>
+                <td>0.035 mm</td>
+            </tr>
+            <tr>
+                <td>Mask</td>
+                <td>-</td>
+                <td>0.01 mm</td>
+            </tr>
+        </table>
+        <p>
+            <strong>Total thickness</strong>: 1.525 mm (standard single-sided
+            FR4 blank thickness)
+        </p>
+
+        <h2>Design Rules → Constraints</h2>
+        <table border="1" cellpadding="5" cellspacing="0">
+            <tr>
+                <th>Parameter</th>
+                <th>Value</th>
+                <th>Notes</th>
+            </tr>
+            <tr>
+                <td>Minimum clearance</td>
+                <td>0.2 mm</td>
+                <td>Safe for photoresist resolution</td>
+            </tr>
+            <tr>
+                <td>Minimum track width</td>
+                <td>0.25 mm</td>
+                <td>Reliable with standard UV exposure</td>
+            </tr>
+            <tr>
+                <td>Minimum connection width</td>
+                <td>0.25 mm</td>
+                <td>Ensures good electrical connection</td>
+            </tr>
+            <tr>
+                <td>Minimum annular width</td>
+                <td>0.15 mm</td>
+                <td>Adequate for manual drilling tolerance</td>
+            </tr>
+            <tr>
+                <td>Minimum via diameter</td>
+                <td>0.6 mm</td>
+                <td>Suitable for 0.3 mm drill bits</td>
+            </tr>
+            <tr>
+                <td>Copper to hole clearance</td>
+                <td>0.3 mm</td>
+                <td>Accounts for drilling precision</td>
+            </tr>
+            <tr>
+                <td>Copper to edge clearance</td>
+                <td>0.5 mm</td>
+                <td>Safe margin for cutting/routing</td>
+            </tr>
+            <tr>
+                <td>Minimum through hole</td>
+                <td>0.6 mm</td>
+                <td>Standard drill bit availability</td>
+            </tr>
+            <tr>
+                <td>Hole to hole clearance</td>
+                <td>0.3 mm</td>
+                <td>Prevents drill breakage</td>
+            </tr>
+            <tr>
+                <td>Min text height</td>
+                <td>0.8 mm</td>
+                <td>Readable after etching process</td>
+            </tr>
+            <tr>
+                <td>Min text thickness</td>
+                <td>0.08 mm</td>
+                <td>Maintains legibility</td>
+            </tr>
+        </table>
+
+        <h2>Net Classes → <code>Default</code></h2>
+        <table border="1" cellpadding="5" cellspacing="0">
+            <tr>
+                <th>Property</th>
+                <th>Value</th>
+            </tr>
+            <tr>
+                <td>Clearance</td>
+                <td>0.2 mm</td>
+            </tr>
+            <tr>
+                <td>Track Width</td>
+                <td>0.25 mm</td>
+            </tr>
+            <tr>
+                <td>Via Size</td>
+                <td>0.6 mm</td>
+            </tr>
+            <tr>
+                <td>Via Hole</td>
+                <td>0.3 mm</td>
+            </tr>
+            <tr>
+                <td>DiffPair Width</td>
+                <td>0.2 mm</td>
+            </tr>
+            <tr>
+                <td>DiffPair Gap</td>
+                <td>0.25 mm</td>
+            </tr>
+        </table>
+
+        <h2>Manufacturing Process Compatibility</h2>
+        <ul>
+            <li>
+                <strong>Photoresist</strong>: Optimized for positive photoresist
+                film or spray application
+            </li>
+            <li>
+                <strong>UV Exposure</strong>: Track/clearance sizes suitable for
+                standard UV LED exposure boxes
+            </li>
+            <li>
+                <strong>Etching</strong>: Compatible with ferric chloride,
+                ammonium persulfate, or muriatic acid + hydrogen peroxide
+            </li>
+            <li>
+                <strong>Drilling</strong>: Via and hole sizes match common PCB
+                drill bit sets (0.3-3.0 mm)
+            </li>
+            <li>
+                <strong>Surface Finish</strong>: Template assumes bare copper
+                (no plating required)
+            </li>
+        </ul>
+
+        <h2>Notes</h2>
+        <ul>
+            <li>
+                No solder mask or silkscreen layers configured — add if needed
+                for your process
+            </li>
+            <li>
+                Conservative design rules prioritize manufacturing success over
+                density
+            </li>
+            <li>
+                Test your specific photoresist/exposure setup with simple test
+                patterns first
+            </li>
+            <li>Consider tinning traces after etching to prevent oxidation</li>
+        </ul>
+
+        <p>&copy; 2025 Nikita Sivakov</p>
+        <p>
+            Template repository:
+            <a href="https://github.com/sivakov512/kicad-templates"
+                >https://github.com/sivakov512/kicad-templates</a
+            >
+        </p>
+    </body>
+</html>

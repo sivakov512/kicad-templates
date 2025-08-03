@@ -1,8 +1,8 @@
 {
   "$schema": "https://go.kicad.org/pcm/schemas/v1",
   "name": "Sivakov KiCad template collection",
-  "description": "KiCad templates optimized for PCB manufacturing services.",
-  "description_full": "A collection of KiCad PCB templates optimized for PCB manufacturing. Templates include preconfigured design rules and stackups to meet specific manufacturing requirements and specifications.",
+  "description": "KiCad templates optimized for PCB manufacturing services and home fabrication.",
+  "description_full": "A collection of KiCad PCB templates optimized for PCB manufacturing services and home fabrication methods. Templates include preconfigured design rules and stackups to meet specific manufacturing requirements, commercial specifications, and DIY capabilities.",
   "identifier": "com.github.sivakov512.kicad-templates",
   "type": "library",
   "author": {
@@ -16,7 +16,15 @@
   "resources": {
     "homepage": "https://github.com/sivakov512/kicad-templates"
   },
-  "tags": ["jlcpcb", "library", "pcb", "template"],
+  "tags": [
+    "jlcpcb",
+    "library",
+    "pcb",
+    "template",
+    "diy",
+    "home-etch",
+    "photoresist"
+  ],
   "versions": [
     {
       "version": "1.0.0",
