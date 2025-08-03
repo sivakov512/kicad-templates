@@ -1,8 +1,8 @@
 # KiCad Template Collection
 
-A collection of KiCad PCB templates optimized for different PCB manufacturing services. Currently includes templates for JLCPCB.
+A collection of KiCad PCB templates optimized for different PCB manufacturing services and methods. Includes templates for commercial fabrication (JLCPCB) and home PCB manufacturing.
 
-Templates come with design rules and stackups already configured to meet manufacturer specifications for optimal price-to-quality ratio.
+Templates come with design rules and stackups already configured to meet manufacturer specifications or home fabrication capabilities for optimal price-to-quality ratio and manufacturing success.
 
 ## Installation
 
@@ -20,7 +20,7 @@ The easiest way to install these templates is through KiCad's Plugin and Content
    https://raw.githubusercontent.com/sivakov512/kicad-pcm-index/master/repository.json
    ```
 5. Click **OK**
-6. Find "Sivakov KiCad template collection" in the list and click **Install**
+5. Find "Sivakov KiCad template collection" in the list and click **Install**
 7. Restart KiCad to ensure all templates are properly loaded
 
 To create a project using these templates after installation:
@@ -46,9 +46,10 @@ This method makes it easier to understand the template path, but requires manual
 
 ## Available Templates
 
-| Template | Description | Manufacturer |
-|----------|-------------|--------------|
-| **JLCPCB Low-Cost Template** | PCB template with minimum design rules for cost-effective fabrication at JLCPCB | JLCPCB |
+| Template | Description | Manufacturing Method |
+|----------|-------------|---------------------|
+| **JLCPCB Low-Cost Template** | PCB template with minimum design rules for cost-effective fabrication at JLCPCB | Commercial (JLCPCB) |
+| **Home Etch Photoresist Template** | PCB template optimized for home fabrication using photoresist etching methods | DIY/Home Manufacturing |
 
 ![Template Selection](./docs/template_selector.png)
 
