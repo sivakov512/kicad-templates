@@ -34,11 +34,11 @@ The template is preconfigured as a 2-layer board with constraints appropriate fo
 
 | Parameter                   | Value   | Notes                                    |
 | --------------------------- | ------- | ---------------------------------------- |
-| Minimum clearance           | 0.2 mm  | Safe for photoresist resolution          |
-| Minimum track width         | 0.3 mm  | Reliable with standard UV exposure       |
+| Minimum clearance           | 0.25 mm | Safe for photoresist resolution          |
+| Minimum track width         | 0.25 mm | Reliable with standard UV exposure       |
 | Minimum connection width    | 0.25 mm | Ensures good electrical connection       |
-| Minimum annular width       | 0.25 mm | Adequate for manual drilling tolerance   |
-| Minimum via diameter        | 0.8 mm  | Suitable for 0.3 mm drill bits          |
+| Minimum annular width       | 0.35 mm | Adequate for manual drilling tolerance   |
+| Minimum via diameter        | 1.0 mm  | Suitable for 0.3 mm drill bits          |
 | Copper to hole clearance    | 0.3 mm  | Accounts for drilling precision          |
 | Copper to edge clearance    | 0.5 mm  | Safe margin for cutting/routing          |
 | Minimum through hole        | 0.3 mm  | Standard drill bit availability          |
@@ -52,9 +52,9 @@ The template is preconfigured as a 2-layer board with constraints appropriate fo
 
 | Property       | Value   |
 | -------------- | ------- |
-| Clearance      | 0.2 mm  |
-| Track Width    | 0.3 mm  |
-| Via Size       | 0.8 mm  |
+| Clearance      | 0.25 mm |
+| Track Width    | 0.25 mm |
+| Via Size       | 1.0 mm  |
 | Via Hole       | 0.3 mm  |
 | DiffPair Width | 0.2 mm  |
 | DiffPair Gap   | 0.25 mm |
