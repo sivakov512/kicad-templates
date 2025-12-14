@@ -1,4 +1,4 @@
-name: Release
+name: PCM Index Release
 
 on:
   release:
@@ -44,12 +44,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Update version in metadata.json
-        run: |
-          # Update version in metadata.json
-          jq --arg ver "${{ needs.prepare.outputs.version }}" '.versions[0].version = $ver' metadata.json > metadata.json.tmp
-          mv metadata.json.tmp metadata.json
-
       - name: Create ZIP archive
         id: create_archive
         run: |
@@ -82,7 +76,7 @@ jobs:
           workflow: add-plugin-version.yml
           repo: sivakov512/kicad-pcm-index
           ref: main
-          token: ${{ secrets.PCM_INDEX_TOKEN }}
+          token: ${{ secrets.RELEASER_TOKEN }}
           inputs: |
             {
               "identifier": "${{ needs.prepare.outputs.identifier }}",
