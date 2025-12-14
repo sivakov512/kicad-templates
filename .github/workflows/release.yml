@@ -81,7 +81,7 @@ jobs:
         with:
           workflow: add-plugin-version.yml
           repo: sivakov512/kicad-pcm-index
-          ref: master
+          ref: main
           token: ${{ secrets.PCM_INDEX_TOKEN }}
           inputs: |
             {
