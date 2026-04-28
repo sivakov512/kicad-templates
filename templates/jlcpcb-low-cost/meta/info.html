@@ -21,7 +21,7 @@
       <li>Silkscreen and copper text tuned to <strong>pass fab tolerances</strong></li>
       <li><code>LCSC PN</code> field present in schematic for <strong>automated BOM generation</strong></li>
       <li><code>Default</code> net class mirrors DRC minimums for <strong>dense routing</strong></li>
-      <li><code>Local_Libs</code> symbol and footprint libraries <strong>pre-connected</strong> for project-specific components</li>
+      <li><code>Local</code> symbol and footprint libraries <strong>pre-connected</strong> for project-specific components</li>
     </ul>
 
     <h2>Stackup (Default: 4 Layers &mdash; JLC04161H-7628)</h2>
@@ -207,7 +207,7 @@
 
     <h2>Local Libraries</h2>
     <p>
-      <code>Local_Libs</code> symbol and footprint libraries are pre-connected in <code>sym-lib-table</code> and <code>fp-lib-table</code>, pointing to <code>Local_Libs.kicad_sym</code> and <code>Local_Libs.pretty/</code> inside the project directory.
+      <code>Local</code> symbol and footprint libraries are pre-connected in <code>sym-lib-table</code> and <code>fp-lib-table</code>, pointing to <code>Local.kicad_sym</code> and <code>Local.pretty/</code> inside the project directory.
     </p>
     <p>Add project-specific components there without touching global library tables.</p>
 

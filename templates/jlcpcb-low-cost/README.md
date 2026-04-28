@@ -14,7 +14,7 @@ The template is preconfigured with a 4-layer stackup and standard low-cost const
 * ✅ Silkscreen and copper text tuned to **pass fab tolerances**
 * ✅ `LCSC PN` field present in schematic for **automated BOM generation**
 * ✅ `Default` net class mirrors DRC minimums for **dense routing**
-* ✅ `Local_Libs` symbol and footprint libraries **pre-connected** for project-specific components
+* ✅ `Local` symbol and footprint libraries **pre-connected** for project-specific components
 
 ---
 
@@ -88,7 +88,7 @@ Complies with JLCPCB silkscreen rules: ≥1 mm height, ≥0.15 mm line.
 
 ## Local Libraries
 
-`Local_Libs` symbol and footprint libraries are pre-connected in `sym-lib-table` and `fp-lib-table`, pointing to `Local_Libs.kicad_sym` and `Local_Libs.pretty/` inside the project directory.
+`Local` symbol and footprint libraries are pre-connected in `sym-lib-table` and `fp-lib-table`, pointing to `Local.kicad_sym` and `Local.pretty/` inside the project directory.
 
 Add project-specific components there without touching global library tables.
 
