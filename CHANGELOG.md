@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.4.2](https://github.com/sivakov512/kicad-templates/compare/v2.4.1...v2.4.2) (2026-04-28)
+
+
+### Bug Fixes
+
+* keep predefined footprint library by using placeholder footprint ([003a477](https://github.com/sivakov512/kicad-templates/commit/003a477112cfead0a24ea6f140dc8703e02adfa0))
+
 ## [2.4.1](https://github.com/sivakov512/kicad-templates/compare/v2.4.0...v2.4.1) (2026-04-28)
 
 
