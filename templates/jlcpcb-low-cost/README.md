@@ -9,27 +9,28 @@ The template is preconfigured with a 4-layer stackup and standard low-cost const
 ## Key Features
 
 * ✅ Based on **JLCPCB's official capability specs**: [jlcpcb.com/capabilities](https://jlcpcb.com/capabilities/pcb-capabilities)
-* ✅ Preconfigured for **4-layer stackup** (total 1.525 mm), easily replaceable with any layer count
+* ✅ Preconfigured for **4-layer stackup JLC04161H-7628** (total 1.6062 mm), easily replaceable with any layer count
 * ✅ Design rule constraints set to **JLCPCB's lowest-cost thresholds**
 * ✅ Silkscreen and copper text tuned to **pass fab tolerances**
 * ✅ `LCSC PN` field present in schematic for **automated BOM generation**
 * ✅ `Default` net class mirrors DRC minimums for **dense routing**
+* ✅ `Local_Libs` symbol and footprint libraries **pre-connected** for project-specific components
 
 ---
 
-## Stackup (Default: 4 Layers)
+## Stackup (Default: 4 Layers — JLC04161H-7628)
 
 | Layer     | Material | Thickness |
 | --------- | -------- | --------- |
 | Top Cu    | Cu       | 0.035 mm  |
-| Prepreg   | FR4      | 0.1 mm    |
-| In1 Cu    | Cu       | 0.0175 mm |
-| Core      | FR4      | 1.2 mm    |
-| In2 Cu    | Cu       | 0.0175 mm |
-| Prepreg   | FR4      | 0.1 mm    |
+| Prepreg 7628 | FR4      | 0.2104 mm |
+| In1 Cu      | Cu       | 0.0152 mm |
+| Core        | FR4      | 1.065 mm  |
+| In2 Cu      | Cu       | 0.0152 mm |
+| Prepreg 7628 | FR4      | 0.2104 mm |
 | Bottom Cu | Cu       | 0.035 mm  |
 
-**Total thickness**: 1.525 mm
+**Total thickness**: 1.6062 mm
 
 ---
 
@@ -84,6 +85,12 @@ Complies with JLCPCB silkscreen rules: ≥1 mm height, ≥0.15 mm line.
 
 * `LCSC PN` field template pre-included for part number assignment.
 * Useful for automatic BOM and placement file generation during assembly quoting.
+
+## Local Libraries
+
+`Local_Libs` symbol and footprint libraries are pre-connected in `sym-lib-table` and `fp-lib-table`, pointing to `Local_Libs.kicad_sym` and `Local_Libs.pretty/` inside the project directory.
+
+Add project-specific components there without touching global library tables.
 
 ---
 

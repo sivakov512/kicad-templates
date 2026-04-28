@@ -27,8 +27,8 @@ To create a project using these templates after installation:
 
 1. Go to **File** → **New Project from Template**
 2. Navigate to the plugin directory:
-   - On macOS: `~/Documents/KiCad/9.0/3rdparty/templates/com_github_sivakov512_kicad-templates`
-   - For other operating systems, check your KiCad third-party path in **Preferences** → **Configure Paths** → **KICAD9_3RD_PARTY**
+   - On macOS: `~/Documents/KiCad/10.0/3rdparty/templates/com_github_sivakov512_kicad-templates`
+   - For other operating systems, check your KiCad third-party path in **Preferences** → **Configure Paths** → **KICAD10_3RD_PARTY**
 3. Select the desired template from the available options
 
 This method ensures that your templates will automatically update when new versions are released with fixes and new templates.
