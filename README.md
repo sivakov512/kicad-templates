@@ -2,6 +2,15 @@
 
 KiCad PCB templates with stackups and design rules pre-configured for specific manufacturers and their fabrication constraints.
 
+## Available Templates
+
+| Template | Description |
+|----------|-------------|
+| **JLCPCB 2L 1oz** | Standard 2-layer board: 1.6mm, 1oz copper, minimum design rules |
+| **JLCPCB 4L 1oz — JLC04161H-7628** | 4-layer stackup JLC04161H-7628: 1.6mm, 1oz outer / 0.5oz inner copper, minimum design rules |
+
+![Template Selection](./docs/template_selector.png)
+
 ## Installation
 
 There are two ways to install and use these templates:
@@ -41,15 +50,6 @@ Alternatively, you can clone this repository and use the templates directly with
 4. Select the desired template from the available options
 
 This method makes it easier to understand the template path, but requires manual updates to get new templates and fixes.
-
-## Available Templates
-
-| Template | Description |
-|----------|-------------|
-| **JLCPCB 2L 1oz** | Standard 2-layer board: 1.6mm, 1oz copper, minimum design rules |
-| **JLCPCB 4L 1oz — JLC04161H-7628** | 4-layer stackup JLC04161H-7628: 1.6mm, 1oz outer / 0.5oz inner copper, minimum design rules |
-
-![Template Selection](./docs/template_selector.png)
 
 ## Contribution
 
