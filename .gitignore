@@ -1,5 +1,12 @@
 .DS_Store
+.envrc
 
-**/*-backups/*
+*.000
+*.bak
+*.lck
+~*.lck
 *.kicad_prl
+**/*-backups/*
+_autosave-*/
+.history/
 fp-info-cache
