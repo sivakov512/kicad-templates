@@ -1,24 +1,21 @@
-# JLCPCB Low-Cost Template
+# JLCPCB 4L 1oz — JLC04161H-7628
 
-A production-oriented KiCad template aligned with [JLCPCB's PCB fabrication capabilities](https://jlcpcb.com/capabilities/pcb-capabilities), using minimum design rules for cost-effective prototyping and manufacturing.
-
-The template is preconfigured with a 4-layer stackup and standard low-cost constraints, but you're free to adjust the number of layers as needed.
+KiCad template for JLCPCB's 4-layer stackup [JLC04161H-7628](https://jlcpcb.com/capabilities/pcb-capabilities): 1oz outer / 0.5oz inner copper, 1.6mm, minimum design rules.
 
 ---
 
 ## Key Features
 
-* ✅ Based on **JLCPCB's official capability specs**: [jlcpcb.com/capabilities](https://jlcpcb.com/capabilities/pcb-capabilities)
-* ✅ Preconfigured for **4-layer stackup JLC04161H-7628** (total 1.6062 mm), easily replaceable with any layer count
+* ✅ Fixed **4-layer stackup JLC04161H-7628**: 1oz outer copper, 0.5oz inner copper, total 1.6062 mm
 * ✅ Design rule constraints set to **JLCPCB's lowest-cost thresholds**
 * ✅ Silkscreen and copper text tuned to **pass fab tolerances**
 * ✅ `LCSC PN` field present in schematic for **automated BOM generation**
-* ✅ `Default` net class mirrors DRC minimums for **dense routing**
+* ✅ `Default` net class set to JLCPCB minimum clearances
 * ✅ `Local` symbol and footprint libraries **pre-connected** for project-specific components
 
 ---
 
-## Stackup (Default: 4 Layers — JLC04161H-7628)
+## Stackup: JLC04161H-7628
 
 | Layer     | Material | Thickness |
 | --------- | -------- | --------- |
@@ -83,8 +80,7 @@ Complies with JLCPCB silkscreen rules: ≥1 mm height, ≥0.15 mm line.
 
 ## Schematic Setup
 
-* `LCSC PN` field template pre-included for part number assignment.
-* Useful for automatic BOM and placement file generation during assembly quoting.
+* `LCSC PN` field template pre-included for BOM and placement file generation during JLCPCB assembly quoting.
 
 ## Local Libraries
 
@@ -97,4 +93,3 @@ Add project-specific components there without touching global library tables.
 ## Notes
 
 * No finish, mask or stencil settings enforced — tune them at Gerber export.
-* Works great as a base for quick prototypes or clean reusable boards.

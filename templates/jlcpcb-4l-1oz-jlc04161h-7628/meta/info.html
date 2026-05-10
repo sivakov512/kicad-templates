@@ -1,30 +1,25 @@
 <html>
   <head>
-    <title>JLCPCB Low-Cost Template</title>
+    <title>JLCPCB 4L 1oz — JLC04161H-7628</title>
   </head>
   <body>
-    <h1>JLCPCB Low-Cost Template</h1>
+    <h1>JLCPCB 4L 1oz — JLC04161H-7628</h1>
 
     <p>
-      A production-oriented KiCad template aligned with <a href="https://jlcpcb.com/capabilities/pcb-capabilities">JLCPCB's PCB fabrication capabilities</a>, using minimum design rules for cost-effective prototyping and manufacturing.
-    </p>
-
-    <p>
-      The template is preconfigured with a 4-layer stackup and standard low-cost constraints, but you're free to adjust the number of layers as needed.
+      KiCad template for JLCPCB's 4-layer stackup <strong>JLC04161H-7628</strong>: 1oz outer / 0.5oz inner copper, 1.6mm, minimum design rules.
     </p>
 
     <h2>Key Features</h2>
     <ul>
-      <li>Based on <strong>JLCPCB's official capability specs</strong>: <a href="https://jlcpcb.com/capabilities/pcb-capabilities">jlcpcb.com/capabilities</a></li>
-      <li>Preconfigured for <strong>4-layer stackup JLC04161H-7628</strong> (total 1.6062 mm), easily replaceable with any layer count</li>
+      <li>Fixed <strong>4-layer stackup JLC04161H-7628</strong>: 1oz outer copper, 0.5oz inner copper, total 1.6062 mm</li>
       <li>Design rule constraints set to <strong>JLCPCB's lowest-cost thresholds</strong></li>
       <li>Silkscreen and copper text tuned to <strong>pass fab tolerances</strong></li>
       <li><code>LCSC PN</code> field present in schematic for <strong>automated BOM generation</strong></li>
-      <li><code>Default</code> net class mirrors DRC minimums for <strong>dense routing</strong></li>
+      <li><code>Default</code> net class set to JLCPCB minimum clearances</li>
       <li><code>Local</code> symbol and footprint libraries <strong>pre-connected</strong> for project-specific components</li>
     </ul>
 
-    <h2>Stackup (Default: 4 Layers &mdash; JLC04161H-7628)</h2>
+    <h2>Stackup: 4 Layers &mdash; JLC04161H-7628</h2>
     <table border="1" cellpadding="5" cellspacing="0">
       <tr>
         <th>Layer</th>
@@ -153,7 +148,7 @@
       </tr>
       <tr>
         <td>Via Hole</td>
-        <td>0.4 mm</td>
+        <td>0.3 mm</td>
       </tr>
       <tr>
         <td>uVia Size</td>
@@ -201,8 +196,7 @@
 
     <h2>Schematic Setup</h2>
     <ul>
-      <li><code>LCSC PN</code> field template pre-included for part number assignment.</li>
-      <li>Useful for automatic BOM and placement file generation during assembly quoting.</li>
+      <li><code>LCSC PN</code> field template pre-included for BOM and placement file generation during JLCPCB assembly quoting.</li>
     </ul>
 
     <h2>Local Libraries</h2>
@@ -214,10 +208,9 @@
     <h2>Notes</h2>
     <ul>
       <li>No finish, mask or stencil settings enforced — tune them at Gerber export.</li>
-      <li>Works great as a base for quick prototypes or clean reusable boards.</li>
     </ul>
 
-    <p>&copy; 2025 Nikita Sivakov</p>
+    <p>&copy; 2026 Nikita Sivakov</p>
     <p>Template repository: <a href="https://github.com/sivakov512/kicad-templates">https://github.com/sivakov512/kicad-templates</a></p>
   </body>
 </html>

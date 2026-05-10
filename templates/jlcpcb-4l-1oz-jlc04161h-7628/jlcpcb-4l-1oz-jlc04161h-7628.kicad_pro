@@ -502,7 +502,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "jlcpcb-low-cost.kicad_pro",
+    "filename": "jlcpcb-4l-1oz-jlc04161h-7628.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -771,8 +771,8 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "jlcpcb-low-cost.kicad_sch",
-        "name": "jlcpcb-low-cost",
+        "filename": "jlcpcb-4l-1oz-jlc04161h-7628.kicad_sch",
+        "name": "jlcpcb-4l-1oz-jlc04161h-7628",
         "uuid": "21bae930-3e14-4189-b094-01a81df48ce6"
       }
     ],
@@ -782,7 +782,7 @@
   "sheets": [
     [
       "21bae930-3e14-4189-b094-01a81df48ce6",
-      "jlcpcb-low-cost"
+      "jlcpcb-4l-1oz-jlc04161h-7628"
     ]
   ],
   "text_variables": {},
