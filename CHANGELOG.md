@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.5.1](https://github.com/sivakov512/kicad-templates/compare/v2.5.0...v2.5.1) (2026-05-10)
+
+
+### Bug Fixes
+
+* change default columns sorting in BOM ([e85fa64](https://github.com/sivakov512/kicad-templates/commit/e85fa64dc0cc8a0e9d3f80c169895d8d13bbff66))
+
 ## [2.5.0](https://github.com/sivakov512/kicad-templates/compare/v2.4.2...v2.5.0) (2026-04-28)
 
 
