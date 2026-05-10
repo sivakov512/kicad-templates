@@ -1,5 +1,24 @@
 # Changelog
 
+## [3.0.0](https://github.com/sivakov512/kicad-templates/compare/v2.5.1...v3.0.0) (2026-05-10)
+
+
+### ⚠ BREAKING CHANGES
+
+* update jlcpcb template to match stackup jlc04161h-7628
+* drop photoresist template
+
+### Features
+
+* add 2 layer 1oz stackup template for JLCPCB ([32ad567](https://github.com/sivakov512/kicad-templates/commit/32ad5674c1d0b387fbd6a0070fb63d297b1f1b66))
+* drop photoresist template ([0910040](https://github.com/sivakov512/kicad-templates/commit/09100404c272097bdda27f91498d205bfb764e19))
+* update jlcpcb template to match stackup jlc04161h-7628 ([b92ab6a](https://github.com/sivakov512/kicad-templates/commit/b92ab6ad3aa057a3e235f755b5c10da7d74d36b1))
+
+
+### Bug Fixes
+
+* update readme structure ([344742d](https://github.com/sivakov512/kicad-templates/commit/344742da75316f700e6b3556c2ec15b153bf795c))
+
 ## [2.5.1](https://github.com/sivakov512/kicad-templates/compare/v2.5.0...v2.5.1) (2026-05-10)
 
 
