@@ -46,6 +46,7 @@ This method makes it easier to understand the template path, but requires manual
 
 | Template | Description |
 |----------|-------------|
+| **JLCPCB 2L 1oz** | Standard 2-layer board: 1.6mm, 1oz copper, minimum design rules |
 | **JLCPCB 4L 1oz — JLC04161H-7628** | 4-layer stackup JLC04161H-7628: 1.6mm, 1oz outer / 0.5oz inner copper, minimum design rules |
 
 ![Template Selection](./docs/template_selector.png)

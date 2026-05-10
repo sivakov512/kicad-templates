@@ -1,0 +1,180 @@
+<html>
+  <head>
+    <title>JLCPCB 2L 1oz</title>
+  </head>
+  <body>
+    <h1>JLCPCB 2L 1oz</h1>
+
+    <p>
+      KiCad template for JLCPCB's standard 2-layer board: 1oz copper, 1.6mm, minimum design rules.
+    </p>
+
+    <h2>Key Features</h2>
+    <ul>
+      <li><strong>2-layer, 1oz copper</strong>, 1.6062 mm total thickness</li>
+      <li>Design rule constraints set to <strong>JLCPCB's lowest-cost thresholds</strong></li>
+      <li>Silkscreen and copper text tuned to <strong>pass fab tolerances</strong></li>
+      <li><code>LCSC PN</code> field present in schematic for <strong>automated BOM generation</strong></li>
+      <li><code>Default</code> net class set to JLCPCB minimum clearances</li>
+      <li><code>Local</code> symbol and footprint libraries <strong>pre-connected</strong> for project-specific components</li>
+    </ul>
+
+    <h2>Stackup</h2>
+    <table border="1" cellpadding="5" cellspacing="0">
+      <tr>
+        <th>Layer</th>
+        <th>Material</th>
+        <th>Thickness</th>
+      </tr>
+      <tr>
+        <td>Top Cu</td>
+        <td>Cu</td>
+        <td>0.035 mm</td>
+      </tr>
+      <tr>
+        <td>Core</td>
+        <td>FR4</td>
+        <td>1.5162 mm</td>
+      </tr>
+      <tr>
+        <td>Bottom Cu</td>
+        <td>Cu</td>
+        <td>0.035 mm</td>
+      </tr>
+    </table>
+    <p><strong>Total thickness</strong>: 1.6062 mm</p>
+
+    <h2>Design Rules → Constraints</h2>
+    <table border="1" cellpadding="5" cellspacing="0">
+      <tr>
+        <th>Parameter</th>
+        <th>Value</th>
+      </tr>
+      <tr>
+        <td>Minimum clearance</td>
+        <td>0.1 mm</td>
+      </tr>
+      <tr>
+        <td>Minimum track width</td>
+        <td>0.1 mm</td>
+      </tr>
+      <tr>
+        <td>Minimum connection width</td>
+        <td>0.1 mm</td>
+      </tr>
+      <tr>
+        <td>Minimum annular width</td>
+        <td>0.05 mm</td>
+      </tr>
+      <tr>
+        <td>Minimum via diameter</td>
+        <td>0.4 mm</td>
+      </tr>
+      <tr>
+        <td>Copper to hole clearance</td>
+        <td>0.2 mm</td>
+      </tr>
+      <tr>
+        <td>Copper to edge clearance</td>
+        <td>0.2 mm</td>
+      </tr>
+      <tr>
+        <td>Minimum through hole</td>
+        <td>0.3 mm</td>
+      </tr>
+      <tr>
+        <td>Hole to hole clearance</td>
+        <td>0.2 mm</td>
+      </tr>
+      <tr>
+        <td>Silkscreen → item clearance</td>
+        <td>0.15 mm</td>
+      </tr>
+      <tr>
+        <td>Min text height</td>
+        <td>1 mm</td>
+      </tr>
+      <tr>
+        <td>Min text thickness</td>
+        <td>0.15 mm</td>
+      </tr>
+    </table>
+
+    <h2>Net Classes → <code>Default</code></h2>
+    <table border="1" cellpadding="5" cellspacing="0">
+      <tr>
+        <th>Property</th>
+        <th>Value</th>
+      </tr>
+      <tr>
+        <td>Clearance</td>
+        <td>0.1 mm</td>
+      </tr>
+      <tr>
+        <td>Track Width</td>
+        <td>0.1 mm</td>
+      </tr>
+      <tr>
+        <td>Via Size</td>
+        <td>0.4 mm</td>
+      </tr>
+      <tr>
+        <td>Via Hole</td>
+        <td>0.3 mm</td>
+      </tr>
+      <tr>
+        <td>DiffPair Width</td>
+        <td>0.15 mm</td>
+      </tr>
+      <tr>
+        <td>DiffPair Gap</td>
+        <td>0.15 mm</td>
+      </tr>
+    </table>
+
+    <h2>Text & Graphics Defaults</h2>
+    <table border="1" cellpadding="5" cellspacing="0">
+      <tr>
+        <th>Layer</th>
+        <th>Line Thickness</th>
+        <th>Text Height</th>
+        <th>Text Width</th>
+        <th>Text Thickness</th>
+      </tr>
+      <tr>
+        <td>Silk</td>
+        <td>0.15 mm</td>
+        <td>1 mm</td>
+        <td>1 mm</td>
+        <td>0.15 mm</td>
+      </tr>
+      <tr>
+        <td>Copper</td>
+        <td>0.2 mm</td>
+        <td>1.5 mm</td>
+        <td>1.5 mm</td>
+        <td>0.3 mm</td>
+      </tr>
+    </table>
+    <p>Complies with JLCPCB silkscreen rules: minimum 1 mm height, minimum 0.15 mm line.</p>
+
+    <h2>Schematic Setup</h2>
+    <ul>
+      <li><code>LCSC PN</code> field template pre-included for BOM and placement file generation during JLCPCB assembly quoting.</li>
+    </ul>
+
+    <h2>Local Libraries</h2>
+    <p>
+      <code>Local</code> symbol and footprint libraries are pre-connected in <code>sym-lib-table</code> and <code>fp-lib-table</code>, pointing to <code>Local.kicad_sym</code> and <code>Local.pretty/</code> inside the project directory.
+    </p>
+    <p>Add project-specific components there without touching global library tables.</p>
+
+    <h2>Notes</h2>
+    <ul>
+      <li>No finish, mask or stencil settings enforced — tune them at Gerber export.</li>
+    </ul>
+
+    <p>&copy; 2026 Nikita Sivakov</p>
+    <p>Template repository: <a href="https://github.com/sivakov512/kicad-templates">https://github.com/sivakov512/kicad-templates</a></p>
+  </body>
+</html>
