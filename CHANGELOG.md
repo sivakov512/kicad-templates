@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.0.1](https://github.com/sivakov512/kicad-templates/compare/v3.0.0...v3.0.1) (2026-10-17)
+
+
+### Bug Fixes
+
+* use JLCPCB dielectric constants in template stackups ([6c799d3](https://github.com/sivakov512/kicad-templates/commit/6c799d307d0eaae263f5679c7106c458e9964f94))
+
 ## [3.0.0](https://github.com/sivakov512/kicad-templates/compare/v2.5.1...v3.0.0) (2026-05-10)
 
 
