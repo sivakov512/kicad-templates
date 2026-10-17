@@ -17,13 +17,17 @@ KiCad template for JLCPCB's standard 2-layer board: 1oz copper, 1.6mm, minimum d
 
 ## Stackup
 
-| Layer     | Material | Thickness  |
-| --------- | -------- | ---------- |
-| Top Cu    | Cu       | 0.035 mm   |
-| Core      | FR4      | 1.5162 mm  |
-| Bottom Cu | Cu       | 0.035 mm   |
+| Layer       | Material   | Thickness  | εr  |
+| ----------- | ---------- | ---------- | --- |
+| Top mask    | Liquid ink | 0.0152 mm  | 3.8 |
+| Top Cu      | Cu         | 0.035 mm   |     |
+| Core        | FR4        | 1.5162 mm  | 4.6 |
+| Bottom Cu   | Cu         | 0.035 mm   |     |
+| Bottom mask | Liquid ink | 0.0152 mm  | 3.8 |
 
 **Total thickness**: 1.6062 mm
+
+Dielectric constants and the mask coating over traces (0.6 mil) are from [JLCPCB impedance control stackups](https://jlcpcb.com/impedance). JLCPCB publishes no separate 2-layer stackup; the core value is the one it gives for its FR4 cores.
 
 ---
 

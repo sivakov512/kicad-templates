@@ -17,17 +17,21 @@ KiCad template for JLCPCB's 4-layer stackup [JLC04161H-7628](https://jlcpcb.com/
 
 ## Stackup: JLC04161H-7628
 
-| Layer     | Material | Thickness |
-| --------- | -------- | --------- |
-| Top Cu    | Cu       | 0.035 mm  |
-| Prepreg 7628 | FR4      | 0.2104 mm |
-| In1 Cu      | Cu       | 0.0152 mm |
-| Core        | FR4      | 1.065 mm  |
-| In2 Cu      | Cu       | 0.0152 mm |
-| Prepreg 7628 | FR4      | 0.2104 mm |
-| Bottom Cu | Cu       | 0.035 mm  |
+| Layer        | Material   | Thickness | εr  |
+| ------------ | ---------- | --------- | --- |
+| Top mask     | Liquid ink | 0.0152 mm | 3.8 |
+| Top Cu       | Cu         | 0.035 mm  |     |
+| Prepreg 7628 | FR4        | 0.2104 mm | 4.4 |
+| In1 Cu       | Cu         | 0.0152 mm |     |
+| Core         | FR4        | 1.065 mm  | 4.6 |
+| In2 Cu       | Cu         | 0.0152 mm |     |
+| Prepreg 7628 | FR4        | 0.2104 mm | 4.4 |
+| Bottom Cu    | Cu         | 0.035 mm  |     |
+| Bottom mask  | Liquid ink | 0.0152 mm | 3.8 |
 
 **Total thickness**: 1.6062 mm
+
+Dielectric constants and the mask coating over traces (0.6 mil) are from [JLCPCB impedance control stackups](https://jlcpcb.com/impedance), so KiCad's impedance calculations match JLCPCB's.
 
 ---
 
